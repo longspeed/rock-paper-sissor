@@ -1,0 +1,43 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+    font: Arial , sans-serif;
+    font-weight: normal;
+}
+
+.Fullpage{
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 74, 121, 1) 25%, rgba(0, 212, 255, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Word{
+    justify-content: baseline;
+    align-items: first baseline;
+    color: gold;
+}
+
+.Welcome{
+    font-size: 50px;
+    display: flex;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin: 30px;
+}
+
+
+
+.button button{
+    color: yellowgreen;
+    padding: 15px 30px;
+    font-size: 50px;
+}
+button:hover{
+    background-color: rgba(255,255,255,0.75);
+    
+}

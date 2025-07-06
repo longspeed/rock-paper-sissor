@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+      function playerchoice(playerchoice){
+        let comp = Math.floor(Math.random()*3 )+ 1;
+        let co ;
+        if(comp === 1){
+         co = "Rock";
+        }else if (comp === 2){
+         co = "Paper";
+        }else{
+         co = "Sissor";
+        }
+        
+        
+         
+         if (playerchoice === co){
+            console.log("Draw");
+         }
+         else if(
+            (playerchoice === "Rock" && co === "Paper") ||
+            (playerchoice === "Paper" && co === "Sissor") ||
+            (playerchoice === "Sissor" && co === "Rock")
+         ){
+            console.log("You Lose");
+         }else{
+            console.log("You Won");
+         }
+         console.log(`Your Choice : ${playerchoice} and computer choice : ${co}`)
+      }
+        
+    </script>
+</head>
+<body>
+<div class="Fullpage">
+   <div class="Word">
+      <div class="Welcome"> Welcome to Rock Paper Sissor Game</div>
+   </div>
+   
+   <div class="button">
+      <button onclick="
+         playerchoice('Rock');
+      ">Rock</button>
+      <button onclick="
+         playerchoice('Paper');
+      ">Paper</button>
+      <button onclick="
+         playerchoice('Sissor');
+      ">Sissor</button>
+   </div>
+</div>
+
+
+</body>
+</html>
